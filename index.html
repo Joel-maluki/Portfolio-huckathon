@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    const email = document.getElementById('email').value;
+    const emailVerification = document.getElementById('email-verification').value;
+
+    if (email !== emailVerification) {
+        alert("The email addresses do not match. Please try again.");
+        event.preventDefault(); // Prevent form submission
+    }
+});
+
+
+
+</head>
+<body>
+
+    <!-- Home Container -->
+    <div class="home-container">
+        <div class="profile-section">
+            <!-- Circular Frame for Photo -->
+            <div class="photo-frame">
+                <img src="images/frame.jpg" alt="Your Photo">
+            </div>
+
+            <!-- Navigation Links Positioned Top-Right of Image -->
+
+    
+
+            <!-- Social Media Links -->
+
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="facebook">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank" class="instagram">Instagram</a>
+                <a href="https://twitter.com" target="_blank" class="twitter">Twitter</a>
+                <a href="https://t.me" target="_blank" class="telegram">Telegram</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Thank You very much and Welcome my Portfolio</h1>
+            <p>I'm Joel Maluki, a passionate web developer, a dedicated Virtual Customer Support Represantative and an Aspiring data annalyst .</p>
+        </section>
+
+       <section id="projects">
+    <h2>Projects</h2>
+    <H1>Here are some of my projects and achievements:</H1>
+    
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Kenya Science and Engineering Fair Results submission App. I enjoyed working on this one </p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p> Garsen Water Billing System. It was an interesting challenge for me!</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Hola Boys school Website. It had a significant impact!</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+    </div>
+</section>
+
+
+        <section id="contact">
+		<h2> Feel free to reach out to me</h2>
+            <h2>Contact</h2>
+		
+            <p>Email: malukijoe7@gmail.com</p>
+
+		<!-- Contact Section -->
+<section id="contact">
+    <h1>Contact Me</h1>
+    <form id="contact-form" method="POST" action="submit_form.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <!-- Email Verification -->
+        <label for="email-verification">Verify your email:</label>
+        <input type="email" id="email-verification" name="email-verification" required><br>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Joel Maluki </p>
+    </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,487 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-section {
+    position: relative;
+    text-align: center;
+}
+
+.photo-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: #f4f4f4; /* Light gray, matches the upper part */
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+    color: #333; /* Dark text for readability */
+}
+
+footer a {
+    color: #333; /* Dark links matching the upper section */
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #FF8C94; /* Light pink for hover effect */
+    text-decoration: underline;
+}
+
+/* Social media icons */
+.footer-icons {
+    margin: 20px 0;
+}
+
+.footer-icons a {
+    font-size: 24px; /* Icons size */
+    margin: 0 15px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #FF8C94; /* Consistent hover effect */
+}
+
+/* Back-to-top button */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    background-color: #FF8C94; /* Light pink matching the hover */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #FFB6C1; /* Slightly darker pink */
+}
+
+
+
+
+
+
+.nav-links a:hover {
+    background-color: #007bff; /* Blue color on hover */
+}
+
+/* Social Media Links */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-media a:hover {
+    color: #007bff;
+}
+
+
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #00416A, #7A8DCA);
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #FFB6C1;
+    color: #003D5B;
+}
+
+
+
+
+
+.profile-section {
+    position: relative;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.photo-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #333;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.photo-frame:hover {
+    transform: scale(1.05);
+    border: 3px solid #FFB6C1;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: #F3F4F6;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+    background-color: #FFB6C1;
+}
+
+.social-media .facebook:hover { background-color: #3b5998; color: white; }
+.social-media .instagram:hover { background-color: #E1306C; color: white; }
+.social-media .twitter:hover { background-color: #1DA1F2; color: white; }
+.social-media .telegram:hover { background-color: #0088cc; color: white; }
+
+
+
+
+
+
+#about {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+#about:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#about h1 {
+    color: #003D5B;
+}
+
+#about p {
+    color: #333;
+    font-size: 18px;
+}
+
+
+
+
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.project-card {
+    background-color: #F1F1F1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: #FFB6C1;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    color: #003D5B;
+}
+
+.project-card p {
+    color: #333;
+}
+
+
+
+
+/* Style for the Projects Section */
+#projects {
+    padding: 40px;
+    background: linear-gradient(135deg, #ff8c00, #ffcc00);
+    text-align: center;
+    color: #fff;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#projects p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+/* Container for project cards */
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Individual project card */
+.project-card {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Title inside project card */
+.project-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+/* Description inside project card */
+.project-card p {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+/* Link inside project card */
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for project links */
+.project-link:hover {
+    background-color: #ff6600;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+.project-card {
+    background-image: url('images/work.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* Style for the Contact Section */
+#contact {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+#contact h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff8c00;
+}
+
+/* Styling for the form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff8c00;
+    outline: none;
+    background: #fff;
+}
+
+/* Hover effect for the Submit Button */
+.submit-btn {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e77c00;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    #contact-form {
+        padding: 20px;
+        width: 90%;
+    }
+    
+    #contact h1, #contact h2 {
+        font-size: 1.8em;
+    }
+}
